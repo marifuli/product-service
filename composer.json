@@ -1,0 +1,25 @@
+{
+    "name": "marifuli/product-service",
+    "description": "Basic Service Provider for Arifdev application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "ArifDev",
+        "email": "admin@arifdev.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Marifuli\\Service\\": "src/"
+        },
+        "files": ["helpers/helper.php"]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marifuli\\Service\\ServiceProvider"
+            ]
+        }
+    }
+}
